@@ -1,27 +1,34 @@
 import requests
-import json
 
 
 def get_list_employers(employer_ids):
     """Получение данных о работадателях"""
-    result = []
+    data = []
+    vacancies = []
     for employer_id in employer_ids:
         url = f"https://api.hh.ru/employers/{employer_id}"
         headers = {"User-Agent": "HH-User-Agent"}
         response = requests.get(url, headers=headers)
-        if response.status_code == 200:
-            result.append(response.json())
-        else:
-            raise BaseException(f"Код ошибки: {response.status_code}")
-    return result
 
-def get_vacancies(employers):
-    """Получение данных о вакансиях работадателей"""
-    for employer in employers:
-        vacancies = employer["vacancies_url"]
-        headers = {"User-Agent": "HH-User-Agent"}
-        response = requests.get(vacancies, headers=headers)
         if response.status_code == 200:
-            return response.json()
+            employer = response.json()
+
+            url_vacancies = response.json()["vacancies_url"]
+            response_vacancies = requests.get(url_vacancies, headers=headers)
+
+            if response_vacancies.status_code == 200:
+                vacancies.append(response_vacancies.json())
+
+            else:
+                raise BaseException(f"Код ошибки: {response_vacancies.status_code}")
+
         else:
             raise BaseException(f"Код ошибки: {response.status_code}")
+
+        data.append(
+            {
+                "employer": employer,
+                "vacancies": vacancies[0]["items"]
+            }
+        )
+    return data
