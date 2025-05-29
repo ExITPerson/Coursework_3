@@ -1,0 +1,51 @@
+[{"employer": {'id': '8932785', "trusted": True, 'accredited_it_employer': False, 'name': 'Adem IT', 'type': 'company', 'description': 'Наша компания специализируется на решении задач в IT сфере для разных компаний. Опираемся на высокое качество и на долговременные рабочие отношения с каждым клиентом. Одно из основных преимуществ в том, что наши клиенты получают комплексный продукт готовый для ввода в эксплуатацию и получения с него прибыли, без необходимости его доделывать в чем то самому заказчику.', 'site_url': 'https://ademcorp.ru/', 'alternate_url': 'https://hh.ru/employer/8932785', 'vacancies_url': 'https://api.hh.ru/vacancies?employer_id=8932785', 'logo_urls': {'240': 'https://img.hhcdn.ru/employer-logo/5510769.png', '90': 'https://img.hhcdn.ru/employer-logo/5510768.png', 'original': 'https://img.hhcdn.ru/employer-logo-original/972480.png'}, 'relations': [], 'area': {'id': '112', 'name': 'Ярославль', 'url': 'https://api.hh.ru/areas/112'}, 'industries': [], 'branded_description': None, 'branding': None, 'insider_interviews': [], 'open_vacancies': 3}, 'vacancies': [{'id': '120884404', 'premium': False, 'n
+ame': 'HTML-верстальщик', 'department': None, 'has_test': False, 'response_letter_required': False, 'area': {'id': '112', 'name': 'Ярославль', 'url': 'https://ap
+i.hh.ru/areas/112'}, 'salary': {'from': 50000, 'to': 80000, 'currency': 'RUR', 'gross': False}, 'salary_range': {'from': 50000, 'to': 80000, 'currency': 'RUR', '
+gross': False, 'mode': {'id': 'MONTH', 'name': 'За\xa0месяц'}, 'frequency': None}, 'type': {'id': 'open', 'name': 'Открытая'}, 'address': None, 'response_url': N
+one, 'sort_point_distance': None, 'published_at': '2025-05-22T21:06:12+0300', 'created_at': '2025-05-22T21:06:12+0300', 'archived': False, 'apply_alternate_url':
+ 'https://hh.ru/applicant/vacancy_response?vacancyId=120884404', 'show_logo_in_search': None, 'show_contacts': False, 'insider_interview': None, 'url': 'https://
+api.hh.ru/vacancies/120884404?host=hh.ru', 'alternate_url': 'https://hh.ru/vacancy/120884404', 'relations': [], 'employer': {'id': '8932785', 'name': 'Adem IT',
+'url': 'https://api.hh.ru/employers/8932785', 'alternate_url': 'https://hh.ru/employer/8932785', 'logo_urls': {'original': 'https://img.hhcdn.ru/employer-logo-or
+iginal/972480.png', '90': 'https://img.hhcdn.ru/employer-logo/5510768.png', '240': 'https://img.hhcdn.ru/employer-logo/5510769.png'}, 'vacancies_url': 'https://a
+pi.hh.ru/vacancies?employer_id=8932785', 'accredited_it_employer': False, 'trusted': True}, 'snippet': {'requirement': 'Хороший опыт работы на WР и других движка
+х, приветствуется. (тильда и подобные конструкторы не интересуют, как и опыт в них). ', 'responsibility': 'Основная сфера деятельности верстка дизайна из рsd и ф
+игмы (в основном фигма). Подробности в переписке. Важно - чистота кода, современные решения...'}, 'contacts': None, 'schedule': {'id': 'remote', 'name': 'Удаленн
+ая работа'}, 'working_days': [], 'working_time_intervals': [], 'working_time_modes': [], 'accept_temporary': False, 'fly_in_fly_out_duration': [], 'work_format':
+ [{'id': 'REMOTE', 'name': 'Удалённо'}, {'id': 'HYBRID', 'name': 'Гибрид'}], 'working_hours': [{'id': 'HOURS_8', 'name': '8\xa0часов'}], 'work_schedule_by_days':
+ [{'id': 'FIVE_ON_TWO_OFF', 'name': '5/2'}], 'night_shifts': False, 'professional_roles': [{'id': '96', 'name': 'Программист, разработчик'}], 'accept_incomplete_
+resumes': False, 'experience': {'id': 'between1And3', 'name': 'От 1 года до 3 лет'}, 'employment': {'id': 'full', 'name': 'Полная занятость'}, 'employment_form':
+ {'id': 'FULL', 'name': 'Полная'}, 'internship': False, 'adv_response_url': None, 'is_adv_vacancy': False, 'adv_context': None}, {'id': '120884382', 'premium': F
+alse, 'name': 'Контент-менеджер', 'department': None, 'has_test': False, 'response_letter_required': False, 'area': {'id': '112', 'name': 'Ярославль', 'url': 'ht
+tps://api.hh.ru/areas/112'}, 'salary': {'from': 30000, 'to': 50000, 'currency': 'RUR', 'gross': False}, 'salary_range': {'from': 30000, 'to': 50000, 'currency':
+'RUR', 'gross': False, 'mode': {'id': 'MONTH', 'name': 'За\xa0месяц'}, 'frequency': None}, 'type': {'id': 'open', 'name': 'Открытая'}, 'address': None, 'response
+_url': None, 'sort_point_distance': None, 'published_at': '2025-05-22T21:00:45+0300', 'created_at': '2025-05-22T21:00:45+0300', 'archived': False, 'apply_alterna
+te_url': 'https://hh.ru/applicant/vacancy_response?vacancyId=120884382', 'show_logo_in_search': None, 'show_contacts': False, 'insider_interview': None, 'url': '
+https://api.hh.ru/vacancies/120884382?host=hh.ru', 'alternate_url': 'https://hh.ru/vacancy/120884382', 'relations': [], 'employer': {'id': '8932785', 'name': 'Ad
+em IT', 'url': 'https://api.hh.ru/employers/8932785', 'alternate_url': 'https://hh.ru/employer/8932785', 'logo_urls': {'original': 'https://img.hhcdn.ru/employer
+-logo-original/972480.png', '90': 'https://img.hhcdn.ru/employer-logo/5510768.png', '240': 'https://img.hhcdn.ru/employer-logo/5510769.png'}, 'vacancies_url': 'h
+ttps://api.hh.ru/vacancies?employer_id=8932785', 'accredited_it_employer': False, 'trusted': True}, 'snippet': {'requirement': 'Ответственность. Доброжелательнос
+ть. Честность. Организованность. Знание фоторедакторов; (минимум базовое). Знание компьютера.', 'responsibility': 'Наполнение сайтов контентом, ведение сайтов (р
+азных). Работа с контентом. Работа с фотографиями для сайтов. Сбор материала для последующего размещения и...'}, 'contacts': None, 'schedule': {'id': 'remote', '
+name': 'Удаленная работа'}, 'working_days': [], 'working_time_intervals': [], 'working_time_modes': [], 'accept_temporary': False, 'fly_in_fly_out_duration': [],
+ 'work_format': [{'id': 'REMOTE', 'name': 'Удалённо'}, {'id': 'HYBRID', 'name': 'Гибрид'}], 'working_hours': [{'id': 'HOURS_8', 'name': '8\xa0часов'}], 'work_sch
+edule_by_days': [{'id': 'FIVE_ON_TWO_OFF', 'name': '5/2'}], 'night_shifts': False, 'professional_roles': [{'id': '3', 'name': 'SMM-менеджер, контент-менеджер'}],
+ 'accept_incomplete_resumes': False, 'experience': {'id': 'noExperience', 'name': 'Нет опыта'}, 'employment': {'id': 'full', 'name': 'Полная занятость'}, 'employ
+ment_form': {'id': 'FULL', 'name': 'Полная'}, 'internship': False, 'adv_response_url': None, 'is_adv_vacancy': False, 'adv_context': None}, {'id': '120361696', '
+premium': False, 'name': 'Личный помощник руководителя', 'department': None, 'has_test': False, 'response_letter_required': False, 'area': {'id': '112', 'name':
+'Ярославль', 'url': 'https://api.hh.ru/areas/112'}, 'salary': {'from': 45000, 'to': 75000, 'currency': 'RUR', 'gross': False}, 'salary_range': {'from': 45000, 't
+o': 75000, 'currency': 'RUR', 'gross': False, 'mode': {'id': 'MONTH', 'name': 'За\xa0месяц'}, 'frequency': None}, 'type': {'id': 'open', 'name': 'Открытая'}, 'ad
+dress': {'city': 'Ярославль', 'street': 'Малая Пролетарская улица', 'building': None, 'lat': 57.611708, 'lng': 39.873745, 'description': None, 'raw': 'Ярославль,
+ Малая Пролетарская улица', 'metro': None, 'metro_stations': [], 'id': '17426420'}, 'response_url': None, 'sort_point_distance': None, 'published_at': '2025-05-2
+6T17:19:49+0300', 'created_at': '2025-05-26T17:19:49+0300', 'archived': False, 'apply_alternate_url': 'https://hh.ru/applicant/vacancy_response?vacancyId=1203616
+96', 'show_logo_in_search': None, 'show_contacts': False, 'insider_interview': None, 'url': 'https://api.hh.ru/vacancies/120361696?host=hh.ru', 'alternate_url':
+'https://hh.ru/vacancy/120361696', 'relations': [], 'employer': {'id': "8932785", 'name': 'Adem IT', 'url': 'https://api.hh.ru/employers/8932785', 'alternate_url
+': 'https://hh.ru/employer/8932785', 'logo_urls': {'original': 'https://img.hhcdn.ru/employer-logo-original/972480.png', '90': 'https://img.hhcdn.ru/employer-log
+o/5510768.png', '240': 'https://img.hhcdn.ru/employer-logo/5510769.png'}, 'vacancies_url': 'https://api.hh.ru/vacancies?employer_id=8932785', 'accredited_it_empl
+"oyer"': False, 'trusted': True}, 'snippet': {'requirement': 'Умение и желание найти решение в сложных задачах. Желание развиваться и достигать высоких результатов
+. Умение самостоятельно формировать и решать задачи...', 'responsibility': 'Оперативные ответы на звонки/сообщения руководителя. Быстрый поиск нужной информации.
+ Проверка выполненных задач других людей. Напоминание по важным делам. '}, 'contacts': None, 'schedule': {'id': 'fullDay', 'name': 'Полный день'}, 'working_days'
+: [], 'working_time_intervals': [], 'working_time_modes': [], 'accept_temporary': False, 'fly_in_fly_out_duration': [], 'work_format': [{'id': 'ON_SITE', 'name':
+ 'На\xa0месте работодателя'}, {'id': 'HYBRID', 'name': 'Гибрид'}, {'id': 'FIELD_WORK', 'name': 'Разъездной'}], 'working_hours': [{'id': 'HOURS_8', 'name': '8\xa0
+часов'}, {'id': 'HOURS_9', 'name': '9 часов'}], 'work_schedule_by_days': [{'id': 'FIVE_ON_TWO_OFF', 'name': '5/2'}], 'night_shifts': False, 'professional_roles':
+ [{'id': '110', 'name': 'Секретарь, помощник руководителя, ассистент'}], 'accept_incomplete_resumes': True, 'experience': {'id': 'noExperience', 'name': 'Нет опы
+та'}, 'employment': {'id': 'full', 'name': 'Полная занятость'}, 'employment_form': {'id': 'FULL', 'name': 'Полная'}, 'internship': False, 'adv_response_url': None, 'is_adv_vacancy': False, 'adv_context': None}]}]

@@ -1,7 +1,5 @@
-import os
-
 from src.config import config
-from src.create_database import save_data_to_database, create_database
+from src.utils import save_data_to_database, create_database
 from src.interaction_api import get_list_employers
 
 
@@ -20,8 +18,10 @@ def main():
     ]
     params = config()
     data = get_list_employers(company_ids)
+
     create_database("employers", params)
     save_data_to_database(data, "employers", params)
+
 
 if __name__ == "__main__":
     main()
