@@ -17,9 +17,9 @@ def create_database(database_name, params):
     conn = psycopg2.connect(dbname=database_name, **params)
     with conn.cursor() as cursor:
         cursor.execute("""
-            CREATE TABLE employers (
+            CREATE TABLE employees (
                 employee_id INTEGER,
-                name VARCHAR(50) NOT NULL,
+                company_name VARCHAR(50) NOT NULL,
                 site_url TEXT,
                 company_hh_url TEXT,
                 area TEXT,
@@ -33,7 +33,7 @@ def create_database(database_name, params):
             CREATE TABLE vacancies (
                 vacancy_id INTEGER,
                 employee_id INTEGER,
-                name VARCHAR(100) NOT NULL,
+                vacancy_name VARCHAR(100) NOT NULL,
                 area TEXT,
                 salary INTEGER,
                 currency TEXT,
@@ -57,8 +57,8 @@ def save_data_to_database(data, database_name, params):
             employer_data = employer["employer"]
             cursor.execute(
                 """
-                INSERT INTO employers 
-                (employee_id, name, site_url, company_hh_url, area, count_open_vacancies, description)
+                INSERT INTO employees 
+                (employee_id, company_name, site_url, company_hh_url, area, count_open_vacancies, description)
                 VALUES (%s, %s, %s, %s, %s, %s, %s)
                 """,
                 (employer_data["id"], employer_data["name"], employer_data["site_url"],
@@ -71,7 +71,7 @@ def save_data_to_database(data, database_name, params):
                 cursor.execute(
                     """
                     INSERT INTO vacancies
-                    (vacancy_id, employee_id, name, area, salary, currency, vacancy_url, responsibility)
+                    (vacancy_id, employee_id, vacancy_name, area, salary, currency, vacancy_url, responsibility)
                     VALUES (%s, %s, %s, %s, %s, %s, %s, %s) 
                     """,
                     (vacancy["id"], vacancy["employer"]["id"], vacancy["name"],

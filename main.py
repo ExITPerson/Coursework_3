@@ -1,4 +1,5 @@
 from src.config import config
+from src.db_manager import DBManager
 from src.utils import save_data_to_database, create_database
 from src.interaction_api import get_list_employers
 
@@ -19,8 +20,14 @@ def main():
     params = config()
     data = get_list_employers(company_ids)
 
-    create_database("employers", params)
-    save_data_to_database(data, "employers", params)
+    create_database("employees", params)
+    save_data_to_database(data, "employees", params)
+
+    emp = DBManager(params, "employees")
+    emp.get_companies_and_vacancies_count()
+    emp.get_all_vacancies()
+    print(emp.get_avg_salary())
+
 
 
 if __name__ == "__main__":
