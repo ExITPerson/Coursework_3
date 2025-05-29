@@ -7,15 +7,15 @@ from src.interaction_api import get_list_employers
 def main():
     company_ids = [
         "8932785",
-        "9451699",
         "1763330",
-        "9553307",
         "1136246",
         "641905",
         "115257",
         "9746436",
         "11001750",
-        "1332487"
+        "1332487",
+        "4538007",
+        "3910342"
     ]
     params = config()
     data = get_list_employers(company_ids)
@@ -26,7 +26,11 @@ def main():
     emp = DBManager(params, "employees")
     emp.get_companies_and_vacancies_count()
     emp.get_all_vacancies()
-    print(emp.get_avg_salary())
+    emp.get_avg_salary()
+    emp.get_vacancies_with_higher_salary()
+    emp.vacancies_with_keyword("Автомеханик")
+    emp.close()
+
 
 
 

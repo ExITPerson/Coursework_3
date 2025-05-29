@@ -42,10 +42,26 @@ class DBManager:
         return result[0]
 
     def get_vacancies_with_higher_salary(self):
-        pass
+        self.__cur.execute(
+            """
+            SELECT * FROM vacancies
+            WHERE salary > (SELECT AVG(salary) FROM vacancies)
+            """
+        )
+        result = self.__cur.fetchall()
+        return result
 
-    def vacancies_with_keyword(self):
-        pass
+
+    def vacancies_with_keyword(self, key):
+        self.__cur.execute(
+            f"""
+            SELECT * FROM vacancies
+            WHERE vacancy_name LIKE '%{key}%'
+            """
+        )
+        result = self.__cur.fetchall()
+        return result
+
 
     def close(self):
         self.__cur.close()
