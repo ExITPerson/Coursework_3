@@ -32,6 +32,6 @@ class HeadHunterAPI(AbstractAPIJob):
 
             vacancies = self.__connection_api(emp["vacancies_url"])
 
-            data.append({"employee": emp, "vacancies": vacancies["items"]})
+            data.append({"employer": emp, "vacancies": vacancies["items"]})
 
         return data

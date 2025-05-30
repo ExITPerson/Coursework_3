@@ -1,7 +1,7 @@
+from src.api_class import HeadHunterAPI
 from src.config import config
 from src.db_manager import DBManager
 from src.utils import save_data_to_database, create_database
-from src.interaction_api import get_list_employers
 
 
 def main():
@@ -18,7 +18,7 @@ def main():
         "3910342"
     ]
     params = config()
-    data = get_list_employers(company_ids)
+    data = HeadHunterAPI(company_ids).get_info()
 
     create_database("employees", params)
     save_data_to_database(data, "employees", params)
@@ -28,10 +28,8 @@ def main():
     emp.get_all_vacancies()
     emp.get_avg_salary()
     emp.get_vacancies_with_higher_salary()
-    emp.vacancies_with_keyword("Автомеханик")
+    emp.get_vacancies_with_keyword("Автомеханик")
     emp.close()
-
-
 
 
 if __name__ == "__main__":
