@@ -1,14 +1,15 @@
 import psycopg2
 
+from src.abs_classes import AbsDBManager
 
-class DBManager:
+
+class DBManager(AbsDBManager):
 
     def __init__(self, params, database_name):
         self.database_name = database_name
         self.__params = params
         self.__conn = psycopg2.connect(dbname=self.database_name, **self.__params)
         self.__cur = self.__conn.cursor()
-
 
     def get_companies_and_vacancies_count(self):
         self.__cur.execute(
@@ -19,7 +20,6 @@ class DBManager:
         result = self.__cur.fetchall()
         return result
 
-
     def get_all_vacancies(self):
         self.__cur.execute(
             """
@@ -29,7 +29,6 @@ class DBManager:
         )
         result = self.__cur.fetchall()
         return result
-
 
     def get_avg_salary(self):
         self.__cur.execute(
@@ -51,8 +50,7 @@ class DBManager:
         result = self.__cur.fetchall()
         return result
 
-
-    def vacancies_with_keyword(self, key):
+    def get_vacancies_with_keyword(self, key):
         self.__cur.execute(
             f"""
             SELECT * FROM vacancies
@@ -61,7 +59,6 @@ class DBManager:
         )
         result = self.__cur.fetchall()
         return result
-
 
     def close(self):
         self.__cur.close()
