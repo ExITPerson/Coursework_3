@@ -81,10 +81,10 @@ def user_interaction():
                     f"Описание: {vacancy[7]}\n"
                 )
 
-            else:
-                print("Вы ввели не правильный запрос, попробуйте снова")
-                emp.close()
-                user_interaction()
+        else:
+            print("Вы ввели не правильный запрос, попробуйте снова")
+            emp.close()
+            user_interaction()
 
         emp.close()
 
