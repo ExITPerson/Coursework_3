@@ -34,7 +34,7 @@ api = HeadHunterAPI(employers_ids)
 
 
 @patch("src.api_class.requests.get")
-def test_get_info_success(mock_get):
+def test_get_info_success(mock_get: Mock) -> None:
     """Тестирование преобразования и вывода данных"""
 
     emp_response = MagicMock()
@@ -76,7 +76,7 @@ def test_get_info_success(mock_get):
 
 
 @patch("src.api_class.requests.get")
-def test_get_info_api_error(mock_get):
+def test_get_info_api_error(mock_get: Mock) -> None:
     """Тестирование ошибки при преобразовании и выводе данных"""
 
     error_response = MagicMock()

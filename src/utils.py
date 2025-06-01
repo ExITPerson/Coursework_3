@@ -1,7 +1,7 @@
 import psycopg2
 
 
-def create_database(database_name, params):
+def create_database(database_name: str, params: dict) -> None:
     """Функция для создания базы данных"""
 
     conn = psycopg2.connect(dbname="postgres", **params)
@@ -50,7 +50,7 @@ def create_database(database_name, params):
     conn.close()
 
 
-def save_data_to_database(data, database_name, params):
+def save_data_to_database(data: list[dict], database_name: str, params: dict) -> None:
     """Сохранение данных в базу данных"""
 
     conn = psycopg2.connect(dbname=database_name, **params)

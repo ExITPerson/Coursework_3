@@ -4,7 +4,9 @@ from src.db_manager import DBManager
 from src.utils import create_database, save_data_to_database
 
 
-def user_interaction():
+def user_interaction() -> None:
+    """ Функция для взаимодействия с пользователем"""
+
     company_ids = [
         "8932785",
         "1763330",

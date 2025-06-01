@@ -29,5 +29,5 @@ class AbsDBManager(ABC):
         pass
 
     @abstractmethod
-    def get_vacancies_with_keyword(self, key) -> None:
+    def get_vacancies_with_keyword(self, key: str) -> None:
         pass
