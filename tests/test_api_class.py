@@ -62,11 +62,11 @@ def test_get_info_success(mock_get: Mock) -> None:
 
     expected = [
         {
-            "employee": emp_response.json.return_value,
+            "employer": emp_response.json.return_value,
             "vacancies": vacancies_response.json.return_value["items"],
         },
         {
-            "employee": emp_response.json.return_value,
+            "employer": emp_response.json.return_value,
             "vacancies": vacancies_response.json.return_value["items"],
         },
     ]
